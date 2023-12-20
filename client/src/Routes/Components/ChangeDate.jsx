@@ -10,7 +10,7 @@ export default function ChangeDate(){
             placeholder='Period' />
             <button
             onClick={() => {
-                axios.post('http://localhost:8080/date',
+                axios.post('https://bounceeoyroster.onrender.com/date',
                 {dateString: document.getElementById('dateString').value})
             }}>Submit</button>
         </div>

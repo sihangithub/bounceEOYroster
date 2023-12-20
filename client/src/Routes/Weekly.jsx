@@ -47,7 +47,7 @@ export default function Weekly(props){
                 }
                 if (shifts.length > 0){
                     for (var i = 0; i < shifts.length; i++){
-                        axios.post('http://localhost:8080/shift', shifts[i])
+                        axios.post('https://bounceeoyroster.onrender.com/shift', shifts[i])
                     }
                     
                 }

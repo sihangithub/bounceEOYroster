@@ -14,7 +14,7 @@ export default function Register(props){
             <input placeholder="Last Name" type={'text'} onChange={e => {setLastName(e.target.value)}}/>
             <input placeholder="email" type={'text'} onChange={e => {setEmail(e.target.value)}}/>
             <button onClick={() => {
-                axios.post('http://localhost:8080/register', 
+                axios.post('https://bounceeoyroster.onrender.com/register', 
                 {firstName: firstName, lastName: lastName, email: email})
             }}>Submit</button>
         </div>

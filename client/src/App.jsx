@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   const load = async () => {
-    await axios.get('http://localhost:8080/api')
+    await axios.get('https://bounceeoyroster.onrender.com/api')
     .then(async data => {
       await setData(data.data.registries)
       await setShiftData(data.data.shifts)
